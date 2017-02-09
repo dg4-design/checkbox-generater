@@ -1,0 +1,38 @@
+{
+  "name": "radio-checkbox-css-generater",
+  "version": "0.0.1",
+  "description": "A script that outputs CSS that applies design to radio buttons and check boxes.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:develop && npm run build:production",
+    "build:develop": "webpack -d",
+    "build:production": "webpack -p --output-filename [name].min.js",
+    "watch": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanndemoiikara/radio-checkbox-css-generater.git"
+  },
+  "keywords": [
+    "radio",
+    "css",
+    "checkbox"
+  ],
+  "author": "NaN demo II Color",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanndemoiikara/radio-checkbox-css-generater/issues"
+  },
+  "homepage": "https://github.com/nanndemoiikara/radio-checkbox-css-generater#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "mithril": "https://github.com/lhorie/mithril.js.git",
+    "mocha": "^3.2.0",
+    "validator": "^6.2.1",
+    "webpack": "^2.2.1"
+  }
+}
