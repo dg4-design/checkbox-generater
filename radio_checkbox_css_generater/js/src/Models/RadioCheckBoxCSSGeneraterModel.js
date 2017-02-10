@@ -31,7 +31,6 @@ class RadioCheckBoxCSSGeneraterModel{
    * @returns {undefined}
    */
   refreshData(value) {
-    console.log('kita');
     getPrivates(this).cssRaw = value;
     const defaultVariables = getPrivates(this).CSSVariableParser.getVariables(value);
     for ( let variable of defaultVariables ) {
