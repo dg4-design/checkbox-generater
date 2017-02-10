@@ -190,7 +190,7 @@ class RadioCheckboxCSSGeneraterViewModel {
    * @returns {undefined}
    */
   setCheckboxIconBorderSize(value) {
-    if ( !validator.isInt(value, {max: (this.getCheckboxSize() - this.getCheckboxIconSize()), min: 1}) ) {
+    if ( !validator.isInt(value, {max: Math.round(this.getCheckboxIconSize() / 5), min: 1}) ) {
       return;
     }
     getPrivates(this).RCModel.getVariable('checkboxIconBorderSize')(`${value}px`);

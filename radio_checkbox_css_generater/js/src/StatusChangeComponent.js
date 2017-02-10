@@ -68,7 +68,7 @@ module.exports = {
       ]),
       m('dt', [
         'Checked icon border size',
-        m('span', `${(vnode.attrs.vm.getCheckboxSize() - vnode.attrs.vm.getCheckboxSize())}〜1`)]
+        m('span', `${Math.floor(vnode.attrs.vm.getCheckboxIconSize() / 5)}〜1`)]
       ),
       m('dd', [
         m('input[type="number"]', {
