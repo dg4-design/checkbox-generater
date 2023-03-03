@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px;
+  height: 100%;
+}
+.Grid {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.Grid--child {
+  width: 48%;
+  margin-right: 2%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.Grid--child textarea {
+  font-size: 12px;
+  padding: 0.5em;
+  border-radius: 5px;
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #000;
+}
+.Grid--child dt,
+.Grid--child dd {
+  border-top: 1px solid #999;
+  padding: 0.5em;
+  float: left;
+}
+.Grid--child dt {
+  width: 70%;
+}
+.Grid--child dd {
+  width: 20%;
+  margin-left: 0px;
+  border-left: 1px dotted #999;
+}
+.Grid--child dt span {
+  font-size: 12px;
+  margin-left: 10px;
+  border-bottom: 1px dotted #aaa;
+}
+.Grid--child dt span:before {
+  content: "(";
+}
+.Grid--child dt span:after {
+  content: ")";
+}
+.Grid--child dd input[type="number"] {
+  width: 4em;
+}
