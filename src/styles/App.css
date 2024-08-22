@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.app-container {
+  display: flex;
+  gap: 20px;
+}
+
+.ControlPanel,
+.Preview,
+.CodeOutput {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+  flex: 1;
+}
+
+.InputGroup {
+  margin-bottom: 20px;
+}
+
+.InputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.RangeInput input[type="range"] {
+  width: 100%;
+}
+
+.ColorInput input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: none;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
